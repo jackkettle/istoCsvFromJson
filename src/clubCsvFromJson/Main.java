@@ -60,6 +60,7 @@ public class Main {
 		String csvHeader = "Club,"
 				+ "Name,"
 				+ "Gender,"
+				+ "Guest,"
 				+ "Shirt,"
 				+ "Shirt Size,"
 				+ "Shirt Color,"
@@ -104,6 +105,12 @@ public class Main {
 				    	writer.append(m.getName() + ",");
 					    // Gender
 					    writer.append(m.getGender() + ",");
+					    // Guest
+					    if(m.isGuest()){
+					    	writer.append(YES + ",");
+					    }else{
+					    	writer.append(NO + ",");
+					    }
 					    // Shirt
 					    if(m.isShirt()){
 					    	writer.append(YES + ",");

@@ -23,6 +23,8 @@ public class Member {
 	@Persistent
 	private  String gender;
 	@Persistent
+	private  boolean guest;
+	@Persistent
 	private  boolean shirt;
 	@Persistent
 	private  String shirtSize;
@@ -345,6 +347,16 @@ public class Member {
 
 	public void  setTrampolineTeam(String trampolineTeam) {
 		this.trampolineTeam = trampolineTeam;
+	}
+
+
+	public boolean isGuest() {
+		return guest;
+	}
+
+
+	public void setGuest(boolean guest) {
+		this.guest = guest;
 	}
 	
 	
